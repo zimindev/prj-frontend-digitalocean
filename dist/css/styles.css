@@ -35,12 +35,20 @@ a:hover {
     border-radius: 12px 0 12px 0;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0;
+    color: #0059B3;
+}
 img {
     display: block;
-    max-width: 450px;
+    max-width: 550px;
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
+    padding: 8px;
 
 }
 
@@ -70,6 +78,7 @@ img {
     font-size: 1.4rem;
     font-weight: 700;
     padding: 1rem;
+    border-radius: 1rem;
     margin-bottom: 3rem;
     position: sticky;
     top: 0;
