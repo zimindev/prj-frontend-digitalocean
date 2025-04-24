@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--! Metadata and page configuration -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-US-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="/web/css/reset.css">
-    <link rel="stylesheet" href="/web/css/styles.css">
-    <link rel="stylesheet" href="/web/css/media.css">
+    <!--! CSS stylesheets -->
+    <link rel="stylesheet" href="/web/css/reset.css"> <!-- Reset default browser styles -->
+    <link rel="stylesheet" href="/web/css/styles.css"> <!-- Main custom styles -->
+    <link rel="stylesheet" href="/web/css/media.css"> <!-- Responsive styles -->
 
+    <!--! Favicon links -->
     <link rel="shortcut icon" href="/web/assets/favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="96x96" href="/web/assets/favicon/favicon-96x96.png">
 
+    <!--! Page title -->
     <title>DigitalOcean Landing</title>
 </head>
 <body>
+    <!--! Header with logo -->
     <header>
         <div class="conteiner_logo">
             <img class="logo" src="/web/assets/img/logo.png" alt="DigitalOcean Logo">
         </div>
     </header>
+
     <main>
+        <!--! Navigation menu -->
         <nav class="main_menu">
             <ul>
                 <li><a href="#start">Start</a></li>
@@ -30,24 +37,30 @@
                 <li><a href="#how_created">How this be created</a></li>
             </ul>
         </nav>
+
+        <!--! Introduction section with headline -->
         <section class="h1_section" id="start">
             <h1>
                 "DigitalOcean - it`s cloud infrastructure for made simple, scalable, and affordable projects."
             </h1>
         </section>
+
+        <!--! Section with embedded YouTube video -->
         <section>
             <h2>🎯 Start | Video</h2>
             <iframe 
-            width="550" 
-            height="315" 
-            src="https://www.youtube.com/embed/ZzsoGvqRHEU?si=gx9QO6qLJZ-mICbT" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
+                width="550" 
+                height="315" 
+                src="https://www.youtube.com/embed/ZzsoGvqRHEU?si=gx9QO6qLJZ-mICbT" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
             </iframe>
         </section>
+
+        <!--! Section about Droplets (Virtual Machines) -->
         <section id="droplets">
             <img class="card" src="/web/assets/img/img1.webp" alt="Droplets">
             <h2>🌐 1. Droplets (Virtual Machines)</h2>
@@ -55,6 +68,8 @@
             <p>🚀 Use cases: Hosting websites, applications, databases, dev environments.</p>
             <p>🧰 Key features: Fast provisioning, scalability, choice of OS (Ubuntu, Debian, CentOS, etc.).</p>
         </section>
+
+        <!--! Section about App Platform -->
         <section id="app_platform">
             <img class="card" src="/web/assets/img/img2.webp" alt="App Platform">
             <h2>☁️ 2. App Platform</h2>
@@ -62,6 +77,8 @@
             <p>📦 Use cases: Deploy from GitHub or GitLab; supports Node.js, Python, PHP, Go, Static sites.</p>
             <p>⚙️ Key features: Autoscaling, HTTPS, built-in CI/CD with zero infrastructure setup.</p>
         </section>
+
+        <!--! Section about Managed Databases -->
         <section id="managed_databases">
             <img class="card" src="/web/assets/img/img3.webp" alt="Managed Databases">
             <h2>🗄️ 3. Managed Databases</h2>
@@ -69,6 +86,8 @@
             <p>🛢️ Supported databases: PostgreSQL, MySQL, Redis, MongoDB, and more.</p>
             <p>🔄 Key features: Backups, replication, automatic updates, and scaling.</p>
         </section>
+
+        <!--! Section with custom video about how the project was made -->
         <section id="how_created">
             <h2>🖱️ How this be created?</h2>
             <video src="/web/assets/video/video.mp4" controls type="video/mp4" width="100%" height="auto">
@@ -76,6 +95,8 @@
             </video>
         </section>
     </main>
+
+    <!--! Footer with copyright -->
     <footer>
         <p>
             &copy; 2023 DigitalOcean, Inc. All rights reserved. | Create by <a class="simple_link" href="https://zimin.dev" target="_blank">Sasha Zimin</a>  <br>
