@@ -89,7 +89,7 @@ p {
     color: #333333;
 }
 
-img {
+.card {
     width: 100%;
     max-width: 700px;
     border-radius: 1rem;
@@ -100,7 +100,7 @@ img {
   }
   
   /* Ефект при наведенні */
-  img:hover {
+  .card:hover {
     transform: scale(1.03);
     box-shadow: 0 15px 30px rgba(0, 128, 255, 0.4);
   }
@@ -148,10 +148,6 @@ footer {
     border-radius: 1rem;
 }
 
-.h1_section{
-    background-color: #fff;
-}
-
 .conteiner_logo {
     display: flex;
     justify-content: center;
@@ -165,6 +161,10 @@ footer {
     height: auto;
     margin: 0 auto;
     padding: 2rem 0;
+}
+
+.h1_section{
+    background-color: #fff;
 }
 
 .main_menu {
@@ -183,4 +183,20 @@ footer {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.simple_link  {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #0080FF;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 12px 0 12px 0;
+}
+
+.simple_link:hover  {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 12px 0 12px 0;
 }
