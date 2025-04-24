@@ -1,6 +1,6 @@
 main {
     margin: 0;
-    padding: 0 32px 32px 32px;
+    padding: 0 32px 0 32px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
 }
@@ -48,12 +48,30 @@ a:hover {
 }
 
 h1 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     margin: 2rem 0;
     color: #0059B3;
-}
+    animation: floatIn 1.2s ease-out forwards;
+    text-shadow: 0 0 10px rgba(0, 128, 255, 0.6);
+    position: relative;
+  }
+  
+  /* Анімація знизу вгору з прозорістю */
+  @keyframes floatIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+      text-shadow: none;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      text-shadow: 0 0 10px rgba(0, 128, 255, 0.6);
+    }
+  }
 
 h2 {
     font-size: 2rem;
@@ -79,6 +97,40 @@ img {
     border-radius: 20px;
     padding: 8px;
 
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+video {
+    display: block;
+    width: 54.375rem;
+    height: 29.6875rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 8px 0 0 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.h1_section{
+    background-color: #fff;
 }
 
 .conteiner_logo {
