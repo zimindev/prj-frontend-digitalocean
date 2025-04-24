@@ -90,14 +90,33 @@ p {
 }
 
 img {
-    display: block;
-    max-width: 550px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 20px;
-    padding: 8px;
-
-}
+    width: 100%;
+    max-width: 700px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 128, 255, 0.2);
+    transform: scale(0.95);
+    animation: imgIn 1.2s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Ефект при наведенні */
+  img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 128, 255, 0.4);
+  }
+  
+  /* Поява при завантаженні */
+  @keyframes imgIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8) rotateX(10deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.95) rotateX(0deg);
+    }
+  }
+  
 
 iframe {
     display: block;
@@ -108,11 +127,11 @@ iframe {
 
 video {
     display: block;
-    width: 54.375rem;
-    height: 29.6875rem;
+    width: 50%;
+    height: auto;
     margin: 0 auto;
     border-radius: 20px;
-    padding: 8px 0 0 0;
+    padding: 10px 0 20px 0;
 }
 
 footer {
