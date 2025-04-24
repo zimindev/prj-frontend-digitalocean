@@ -1,202 +1,223 @@
+/** Main content container */
 main {
-    margin: 0;
-    padding: 0 32px 0 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
+  margin: 0;
+  padding: 0 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
+/** Section wrapper styling */
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: #D6EBFF;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #D6EBFF;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 4rem;
 }
 
+/** Navigation menu container */
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 2rem;
-}
-a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: #0080FF;
-    padding: 1rem 2rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 12px 0 12px 0;
-}
-a:hover {
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 12px 0 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
 }
 
+/** Navigation list styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+/** Navigation links */
+a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #0080FF;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 12px 0 12px 0;
+}
+
+/** Hover effect for navigation links */
+a:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 12px 0 12px 0;
+}
+
+/** Main heading style with animation and shadow */
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 2rem 0;
-    color: #0059B3;
-    animation: floatIn 1.2s ease-out forwards;
-    text-shadow: 0 0 10px rgba(0, 128, 255, 0.6);
-    position: relative;
-  }
-  
-  /* Анімація знизу вгору з прозорістю */
-  @keyframes floatIn {
-    0% {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+  color: #0059B3;
+  animation: floatIn 1.2s ease-out forwards;
+  text-shadow: 0 0 10px rgba(0, 128, 255, 0.6);
+  position: relative;
+}
+
+/** Animation from bottom to top with fade-in */
+@keyframes floatIn {
+  0% {
       opacity: 0;
       transform: translateY(30px);
       text-shadow: none;
-    }
-    100% {
+  }
+  100% {
       opacity: 1;
       transform: translateY(0);
       text-shadow: 0 0 10px rgba(0, 128, 255, 0.6);
-    }
   }
+}
 
+/** Subheading style */
 h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 2rem 0;
-    color: #1E1E1E;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+  color: #1E1E1E;
 }
 
+/** Paragraph style */
 p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 1rem 0;
-    color: #333333;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 0;
+  color: #333333;
 }
 
+/** Card container with animation */
 .card {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 1rem;
-    box-shadow: 0 10px 20px rgba(0, 128, 255, 0.2);
-    transform: scale(0.95);
-    animation: imgIn 1.2s ease forwards;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Ефект при наведенні */
-  .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 15px 30px rgba(0, 128, 255, 0.4);
-  }
-  
-  /* Поява при завантаженні */
-  @keyframes imgIn {
-    0% {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 128, 255, 0.2);
+  transform: scale(0.95);
+  animation: imgIn 1.2s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/** Hover effect for card */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 128, 255, 0.4);
+}
+
+/** Entrance animation for card */
+@keyframes imgIn {
+  0% {
       opacity: 0;
       transform: scale(0.8) rotateX(10deg);
-    }
-    100% {
+  }
+  100% {
       opacity: 1;
       transform: scale(0.95) rotateX(0deg);
-    }
   }
-  
+}
 
+/** Iframe styling */
 iframe {
-    display: block;
-    margin: 0 auto;
-    border-radius: 20px;
-    padding: 8px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 8px;
 }
 
+/** Video styling */
 video {
-    display: block;
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 20px;
-    padding: 10px 0 20px 0;
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px 0 20px 0;
 }
 
+/** Footer styling */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    background-color: #f3f3f3;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    padding: 1rem;
-    border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
+/** Logo container */
 .conteiner_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
 }
 
+/** Logo image style */
 .logo {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    margin: 0 auto;
-    padding: 2rem 0;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
-.h1_section{
-    background-color: #fff;
+/** Optional background for h1 section */
+.h1_section {
+  background-color: #fff;
 }
 
+/** Sticky top menu styling */
 .main_menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    background-color: #f3f3f3;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 3rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.simple_link  {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: #0080ff;
-    padding: 0;
-    border-radius: 0;
-    font-weight: 700;
+/** Simple inline link style */
+.simple_link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #0080ff;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 700;
 }
 
-.simple_link:hover  {
-    background-color: #ffffff;
-    color: #1100ff;
-    border-radius: 0;
+/** Hover effect for simple link */
+.simple_link:hover {
+  background-color: #ffffff;
+  color: #1100ff;
+  border-radius: 0;
 }
