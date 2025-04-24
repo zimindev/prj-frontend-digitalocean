@@ -5,6 +5,18 @@ main {
     background-color: #ffffff;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #D6EBFF;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
 
 nav {
     display: flex;
@@ -42,6 +54,23 @@ h1 {
     margin: 2rem 0;
     color: #0059B3;
 }
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0;
+    color: #1E1E1E;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem 0;
+    color: #333333;
+}
+
 img {
     display: block;
     max-width: 550px;
